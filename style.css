@@ -1,0 +1,61 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-dark: #222;
+  --clr-light: #eee;
+  --clr-accent-dark: #ff0a54;
+  --clr-accent-light: #fbb1bd;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: var(--clr-dark);
+  color: var(--clr-accent-light);
+}
+
+main {
+  padding: 1em 0;
+  background-color: var(--clr-light);
+}
+
+.section {
+  background-color: var(--clr-light);
+  padding: 1em 0;
+}
+
+.section-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* typography */
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive;
+}
+
+h2.section-heading {
+  color: var(--clr-accent-dark);
+  font-weight: 700;
+  font-size: 2rem;
+}
