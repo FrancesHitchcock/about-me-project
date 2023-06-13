@@ -5,6 +5,9 @@ console.log("Hi");
 let userName = "";
 let userGuess1 = "";
 let userGuess2 = "";
+let userGuess3 = "";
+let userGuess4 = "";
+let userGuess5 = "";
 
 function getUserName() {
   userName = prompt("Hi, I'm Frances. What would you like me to call you?");
@@ -40,7 +43,7 @@ function getUserGuess2() {
     userGuess2.toLowerCase() === "n"
   ) {
     alert(
-      "Sorry, that is the wrong answer, strawberries are my favourite fruit."
+      "Sorry, that is the wrong answer, I adore strawberries in the summer."
     );
   } else {
     alert("please answer using 'yes/y' or 'no/n'");
@@ -48,8 +51,68 @@ function getUserGuess2() {
   }
 }
 
-// getUserName();
+function getUserGuess3() {
+  userGuess3 = prompt("Do I have a pet cat?");
+  console.log(userGuess3);
+  if (userGuess3.toLowerCase() === "no" || userGuess3.toLowerCase() === "n") {
+    alert("Well done, '" + userGuess3 + "' is the correct answer!");
+  } else if (
+    userGuess3.toLowerCase() === "yes" ||
+    userGuess3.toLowerCase() === "y"
+  ) {
+    alert(
+      "Sorry, that is the wrong answer, but I would love to have a pet cat."
+    );
+  } else {
+    alert("please answer using 'yes/y' or 'no/n'");
+    getUserGuess3();
+  }
+}
 
-// getUserGuess1();
+function getUserGuess4() {
+  userGuess4 = prompt("Was I born inside the M25 ring road?");
+  console.log(userGuess4);
+  if (userGuess4.toLowerCase() === "no" || userGuess4.toLowerCase() === "n") {
+    alert("Well done, '" + userGuess4 + "' is the correct answer!");
+  } else if (
+    userGuess4.toLowerCase() === "yes" ||
+    userGuess4.toLowerCase() === "y"
+  ) {
+    alert(
+      "Sorry, that is the wrong answer, the M25 didn't exist when I was born."
+    );
+  } else {
+    alert("please answer using 'yes/y' or 'no/n'");
+    getUserGuess4();
+  }
+}
 
-// getUserGuess2();
+function getUserGuess5() {
+  userGuess5 = prompt("Do I want a career as a coder?");
+  console.log(userGuess5);
+  if (userGuess5.toLowerCase() === "yes" || userGuess5.toLowerCase() === "y") {
+    alert("Well done, '" + userGuess5 + "' is the correct answer!");
+  } else if (
+    userGuess5.toLowerCase() === "no" ||
+    userGuess5.toLowerCase() === "n"
+  ) {
+    alert(
+      "Sorry, that is the wrong answer, why would I be doing this course if I didn't want to be a coder?!"
+    );
+  } else {
+    alert("please answer using 'yes/y' or 'no/n'");
+    getUserGuess5();
+  }
+}
+
+getUserName();
+
+getUserGuess1();
+
+getUserGuess2();
+
+getUserGuess3();
+
+getUserGuess4();
+
+getUserGuess5();
