@@ -12,9 +12,9 @@ Lighthouse Accessibility Score:
 - External CSS files with basic styling.
 - External JS file with functionality to greet user, ask them five yes/no questions and feed back whether they were correct or not, and say goodbye at the end.
 
-## Class 3 Work Wednesday 14th June 2023
-
 ---
+
+## Class 3 Work Wednesday 14th June 2023
 
 lighthouse Accessibility Score: 95
 
