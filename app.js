@@ -42,15 +42,22 @@ function getUserGuess(question, correct, incorrect, response) {
 
 function guessMyNumber() {
   const secretNumber = 4;
-  let userGuess = prompt("Guess my number");
+  let userGuess = prompt("Guess my number. You have four attempts.");
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 1; i <= 4; i++) {
     console.log(userGuess);
     if (parseInt(userGuess) === secretNumber) {
       alert("correct");
       points++;
       break;
-    } else if (parseInt(userGuess) < secretNumber) {
+    }
+
+    if (i === 4) {
+      alert("you have run out of guesses");
+      break;
+    }
+
+    if (parseInt(userGuess) < secretNumber) {
       userGuess = prompt("Too low, try again");
     } else {
       userGuess = prompt("Too high, try again");
@@ -61,6 +68,30 @@ function guessMyNumber() {
 
 function guessAnAnimalILike() {
   const myAnimals = ["crocodile", "hamster", "pig", "cat"];
+  let userGuess = prompt(
+    "Can you guess one of my favourite animals? You have six attempts."
+  );
+
+  for (let i = 1; i <= 6; i++) {
+    console.log(userGuess);
+    let correctGuess = false;
+
+    if (myAnimals.includes(userGuess)) {
+      alert("correct");
+      points++;
+      break;
+    }
+
+    if (i === 6) {
+      alert("you have run out of guesses. My favourite animals are: ");
+      break;
+    }
+
+    userGuess = prompt(
+      "That's not one of my favourite animals. Have another go"
+    );
+  }
+  console.log(points);
 }
 
 function sayGoodbye() {
