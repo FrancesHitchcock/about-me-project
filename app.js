@@ -42,12 +42,19 @@ function getUserGuess(question, correct, incorrect, response) {
 
 function guessMyNumber() {
   const secretNumber = 4;
+  let numberOfGuesses = 1;
 
-  let userNumber = prompt(
+  let userGuess = prompt(
     "Can you guess my secret number? It is a whole number between 1 and 20. You have four attempts!"
   );
-  console.log(typeof userNumber);
-  // while(userNumber !== secretNumber)
+  // console.log(userGuess);
+
+  while (parseInt(userGuess) !== secretNumber && numberOfGuesses <= 4) {
+    numberOfGuesses++;
+    console.log(numberOfGuesses);
+    // if
+    userGuess = prompt("have another go");
+  }
 }
 
 function sayGoodbye() {
