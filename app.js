@@ -74,7 +74,6 @@ function guessAnAnimalILike() {
 
   for (let i = 1; i <= 6; i++) {
     console.log(userGuess);
-    let correctGuess = false;
 
     if (myAnimals.includes(userGuess)) {
       alert("correct");
@@ -82,8 +81,19 @@ function guessAnAnimalILike() {
       break;
     }
 
+    // for (let j = 0; j < myAnimals.length; j++) {
+    //   if (myAnimals[j] === userGuess) {
+    //     alert("correct");
+    //     points++;
+    //     break;
+    //   }
+    // }
+
     if (i === 6) {
-      alert("you have run out of guesses. My favourite animals are: ");
+      alert(
+        "you have run out of guesses. My favourite animals are: " +
+          myAnimals.join(", ")
+      );
       break;
     }
 
@@ -137,6 +147,6 @@ function sayGoodbye() {
 
 // guessMyNumber();
 
-// sayGoodbye();
-
 guessAnAnimalILike();
+
+// sayGoodbye();
