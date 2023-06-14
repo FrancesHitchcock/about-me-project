@@ -46,6 +46,18 @@ main {
   margin: 0 auto;
 }
 
+.list-container {
+  padding: 1em 0;
+}
+
+li {
+  list-style-position: inside;
+}
+
+.nested-list-item {
+  margin-left: 1em;
+}
+
 /* typography */
 
 h1 {
