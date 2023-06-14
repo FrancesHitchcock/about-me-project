@@ -42,32 +42,25 @@ function getUserGuess(question, correct, incorrect, response) {
 
 function guessMyNumber() {
   const secretNumber = 4;
-  let numberOfGuesses = 0;
+  let userGuess = prompt("Guess my number");
 
-  let userGuess = prompt(
-    "Can you guess my secret number? It is a whole number between 1 and 20. You have four attempts!"
-  );
-  // console.log(userGuess);
+  for (let i = 0; i < 4; i++) {
+    console.log(userGuess);
+    if (parseInt(userGuess) === secretNumber) {
+      alert("correct");
+      points++;
+      break;
+    } else if (parseInt(userGuess) < secretNumber) {
+      userGuess = prompt("Too low, try again");
+    } else {
+      userGuess = prompt("Too high, try again");
+    }
+  }
+  console.log(points);
+}
 
-  // while (parseInt(userGuess) !== secretNumber && numberOfGuesses <= 3) {
-  //   numberOfGuesses++;
-  //   console.log(numberOfGuesses);
-  //   if (parseInt(userGuess) === secretNumber) {
-  //     alert("Well done, that's the correct answer");
-  //     points++;
-  //   } else if (parseInt(userGuess) < secretNumber) {
-  //     userGuess = prompt("Too low. Have another guess!");
-  //   } else {
-  //     userGuess = prompt("Too high. Have another guess!");
-  //   }
-
-  //   if (numberOfGuesses === 4) {
-  //     alert("You have run out of guesses!");
-  //   }
-  //   console.log(points);
-  // }
-
-  console.log(typeof userGuess);
+function guessAnAnimalILike() {
+  const myAnimals = ["crocodile", "hamster", "pig", "cat"];
 }
 
 function sayGoodbye() {
@@ -111,6 +104,8 @@ function sayGoodbye() {
 //   "why would I be doing this course if I didn't want to be a coder?!"
 // );
 
-guessMyNumber();
+// guessMyNumber();
 
 // sayGoodbye();
+
+guessAnAnimalILike();
