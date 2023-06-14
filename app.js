@@ -42,19 +42,32 @@ function getUserGuess(question, correct, incorrect, response) {
 
 function guessMyNumber() {
   const secretNumber = 4;
-  let numberOfGuesses = 1;
+  let numberOfGuesses = 0;
 
   let userGuess = prompt(
     "Can you guess my secret number? It is a whole number between 1 and 20. You have four attempts!"
   );
   // console.log(userGuess);
 
-  while (parseInt(userGuess) !== secretNumber && numberOfGuesses <= 4) {
-    numberOfGuesses++;
-    console.log(numberOfGuesses);
-    // if
-    userGuess = prompt("have another go");
-  }
+  // while (parseInt(userGuess) !== secretNumber && numberOfGuesses <= 3) {
+  //   numberOfGuesses++;
+  //   console.log(numberOfGuesses);
+  //   if (parseInt(userGuess) === secretNumber) {
+  //     alert("Well done, that's the correct answer");
+  //     points++;
+  //   } else if (parseInt(userGuess) < secretNumber) {
+  //     userGuess = prompt("Too low. Have another guess!");
+  //   } else {
+  //     userGuess = prompt("Too high. Have another guess!");
+  //   }
+
+  //   if (numberOfGuesses === 4) {
+  //     alert("You have run out of guesses!");
+  //   }
+  //   console.log(points);
+  // }
+
+  console.log(typeof userGuess);
 }
 
 function sayGoodbye() {
