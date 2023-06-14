@@ -41,8 +41,10 @@ function getUserGuess(question, correct, incorrect, response) {
 }
 
 function guessMyNumber() {
-  const secretNumber = 4;
-  let userGuess = prompt("Guess my number. You have four attempts.");
+  const secretNumber = Math.floor(Math.random() * 20 + 1);
+  let userGuess = prompt(
+    "I am thinking of a number between 1 and 20. You have four attempts to guess it."
+  );
 
   for (let i = 1; i <= 4; i++) {
     console.log(userGuess);
@@ -105,48 +107,54 @@ function guessAnAnimalILike() {
 }
 
 function sayGoodbye() {
-  alert("Nice doing business with you " + userName + ". See you next time!");
+  alert(
+    "You have scored " +
+      points +
+      " points. Nice doing business with you " +
+      userName +
+      ". See you next time!"
+  );
 }
 
-// getUserName();
+getUserName();
 
-// getUserGuess(
-//   "As a child did I dream of being a dancer?",
-//   "no",
-//   "yes",
-//   "I have never wanted to be a dancer."
-// );
+getUserGuess(
+  "As a child did I dream of being a dancer?",
+  "no",
+  "yes",
+  "I have never wanted to be a dancer."
+);
 
-// getUserGuess(
-//   "Are my favourite fruit strawberries?",
-//   "yes",
-//   "no",
-//   "I adore strawberries in the summer."
-// );
+getUserGuess(
+  "Are my favourite fruit strawberries?",
+  "yes",
+  "no",
+  "I adore strawberries in the summer."
+);
 
-// getUserGuess(
-//   "Do I have a pet cat?",
-//   "no",
-//   "yes",
-//   "but I would love to have a pet cat."
-// );
+getUserGuess(
+  "Do I have a pet cat?",
+  "no",
+  "yes",
+  "but I would love to have a pet cat."
+);
 
-// getUserGuess(
-//   "Was I born inside the M25 ring road?",
-//   "no",
-//   "yes",
-//   "the M25 didn't exist when I was born."
-// );
+getUserGuess(
+  "Was I born inside the M25 ring road?",
+  "no",
+  "yes",
+  "the M25 didn't exist when I was born."
+);
 
-// getUserGuess(
-//   "Do I want a career as a coder?",
-//   "yes",
-//   "no",
-//   "why would I be doing this course if I didn't want to be a coder?!"
-// );
+getUserGuess(
+  "Do I want a career as a coder?",
+  "yes",
+  "no",
+  "why would I be doing this course if I didn't want to be a coder?!"
+);
 
-// guessMyNumber();
+guessMyNumber();
 
 guessAnAnimalILike();
 
-// sayGoodbye();
+sayGoodbye();
