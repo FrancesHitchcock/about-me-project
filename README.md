@@ -27,3 +27,11 @@ lighthouse Accessibility Score: 95
 - Functionality added to give the user four attempts at guessing a random number, and to give them six attempts at guessing an item in an array. An accumulator variable was added and the number of correct answers is displayed at the end.
 
 ---
+
+## Class 4 Work Thursday 15th June 2023
+
+### Work Completed
+
+- Improved feedback to user following their responses.
+
+---

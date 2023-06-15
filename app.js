@@ -57,7 +57,9 @@ function guessMyNumber() {
 
     // on the fourth guess an alert is displayed and the loop breaks
     if (i === 4) {
-      alert("you have run out of guesses");
+      alert(
+        "you have run out of guesses. The correct number is " + secretNumber
+      );
       break;
     }
 
@@ -103,7 +105,7 @@ function guessAnAnimalILike() {
 
     // if the guess is correct an alert is displayed, a point is added and the loop breaks
     if (isGuessCorrect === true) {
-      alert("correct");
+      alert("correct, " + userGuess + " is one of my favourite animals!");
       points++;
       break;
     }
@@ -118,7 +120,7 @@ function guessAnAnimalILike() {
 
     // otherwise the user gets another guess
     userGuess = prompt(
-      "That's not one of my favourite animals. Have another go"
+      "That's not one of my favourite animals. Have another go!"
     ).toLowerCase();
   }
 }
