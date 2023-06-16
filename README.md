@@ -35,3 +35,15 @@ lighthouse Accessibility Score: 95
 - Improved feedback to user following their responses.
 
 ---
+
+## Class 5 Work Friday 16th June 2023
+
+lighthouse Accessibility Score: 95
+
+![Lighthouse Accessibility Screen Shot 16th June](/Screenshot%202023-06-16%20161213.png "Lighthouse Accessibility Screen Shot 16th June")
+
+### Work Completed
+
+- Added responsiveness using css grid
+
+---
