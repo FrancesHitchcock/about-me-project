@@ -22,6 +22,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.wrapper {
+  background-color: var(--clr-light);
+}
+
 header,
 footer {
   text-align: center;
@@ -31,23 +35,24 @@ footer {
 }
 
 main {
-  padding: 1em 0;
+  padding: 2em 0;
   background-color: var(--clr-light);
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+@media (min-width: 600px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .section {
   background-color: var(--clr-light);
-  padding: 1em 0;
-}
-
-.section-container {
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.list-container {
-  padding: 1em 0;
 }
 
 li {
@@ -69,5 +74,5 @@ h1 {
 h2.section-heading {
   color: var(--clr-accent-dark);
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
